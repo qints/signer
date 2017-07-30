@@ -5,7 +5,7 @@
 	<artifactId>signer</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>signer</name>
-	<description>swing组件界面的java签名工具</description>
+	<description>swing组件界面的java签名工具(utf-8)</description>
 
 	<dependencies>
 		<dependency>
