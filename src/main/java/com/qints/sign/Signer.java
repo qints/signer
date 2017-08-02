@@ -32,11 +32,18 @@ public class Signer extends JFrame {
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
 			public void run() {
+				// try {
+				// UIManager.setLookAndFeel(
+				// "org.pushingpixels.substance.api.skin.SubstanceBusinessBlueSteelLookAndFeel");
+				// } catch (Exception e) {
+				// e.printStackTrace();
+				// }
 				try {
-					UIManager.setLookAndFeel(
-							"org.pushingpixels.substance.api.skin.SubstanceBusinessBlueSteelLookAndFeel");
+					//加载BeautyEye组件
+					org.jb2011.lnf.beautyeye.BeautyEyeLNFHelper.launchBeautyEyeLNF();
+					UIManager.put("RootPane.setupButtonVisible", false);
 				} catch (Exception e) {
-					e.printStackTrace();
+					// TODO exception
 				}
 				new Signer();
 			}

@@ -23,6 +23,9 @@ import javax.swing.JTextField;
 import javax.swing.filechooser.FileFilter;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.Document;
+
+import org.jb2011.lnf.beautyeye.ch3_button.BEButtonUI;
+
 import net.miginfocom.swing.MigLayout;
 
 public class SignerJarPanel extends JPanel {
@@ -176,6 +179,9 @@ public class SignerJarPanel extends JPanel {
 		this.jksAliasField.setToolTipText(pref.get("jks.alias", ""));
 		this.jarFilePathField.setText(pref.get("jar.file.path", ""));
 		this.jarFilePathField.setToolTipText(pref.get("jar.file.path", ""));
+		
+		this.signeBtn.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.lightBlue));
+		this.helpBtn.setUI(new BEButtonUI().setNormalColor(BEButtonUI.NormalColor.green));
 	}
 
 	private void initListener() {
